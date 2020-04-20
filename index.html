@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estado de Salud</title>
+    <link rel="icon" href="virus-pattern-on-a-dark-background-vector.jpg">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  
+  <body background="virus-pattern-on-a-dark-background-vector.jpg" id=fondo>
+    <header>
+      <h1 id="titulo">Estado de Salud <br>
+        Medellín Area Metropolitana</h1>
+      <p id="descripn">
+        <i>La siguiente información solicitada nos ayuda a verificar el estado actual de la salud de los habitantes en nuestro territorio</i>
+      </p>
+    </header>
+    <main>
+      <form id="survey-form" class="borde">
+        <div>
+          <label for="name" id="name-label">Nombre</label><br>          
+          <input
+            type="text"
+            name="nombre"
+            id="name"
+            placeholder="Ingresa tu nombre"
+            required
+          />
+        </div>
+        <div>
+          <label for="email" id="eamil-label">Email</label><br> 
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Ingresa tu email"
+            required
+          />
+        </div>
+        <div>
+          <label for="age" id="age-label">Edad</label><br> 
+          <input
+            type="number"
+            name="edad"
+            id="age"
+            min="1"
+            max="99"
+            placeholder="Ingresa tu edad"
+            required
+          />
+        </div>
+        <div>
+            <label for="direction" id="direction-label">Dirección</label><br> 
+            <input
+              type="text"
+              name="dirección"
+              id="direction"
+              placeholder="Ingresa tu dirección"
+              required
+            />
+          </div>
+        <div id="genero">
+            <p>Genero</p>
+          <label for="masculino">
+          <input type="radio" name="tipo" id="masculino" value="Masculino" />Masculino</label>
+
+          <label for="femenino">
+          <input type="radio" name="tipo" id="femenino" value="Femenino" />Femenino</label>
+
+          <label for="mixto">
+          <input type="radio" name="tipo" id="mixto" value="Cis-Genero" />Cis-genero</div>
+        <div>
+            <label for="dropdown"
+            >Municipio de Residencia
+            <select id="dropdown" required>
+              <option value=""></option>
+              <option value="Medellín">Medellín</option>
+              <option value="Envigado">Envigado</option>
+              <option value="Itagüi">Itagüi</option>
+              <option value="Sabaneta">Sabaneta</option>
+              <option value="La Estrella">La Estrella</option>
+              <option value="Caldas">Caldas</option>
+              <option value="Bello">Bello</option>
+              <option value="Girardota">Girardota</option>
+              <option value="Copacabana">Copacabana</option>
+              <option value="Barbosa">Barbosa</option>
+
+
+            </select>
+          </label>
+        </div>
+        <div id="sintomas">
+          <p>Usted presenta alguno de los siguientes sintomas?</p>
+          <label for="saltar">
+            <input type="checkbox" name="gustos" id="saltar" value="saltar" />
+            Fiebre > 38°
+          </label>
+          <label for="comer">
+            <input type="checkbox" name="gustos" id="comer" value="comer" />
+            Gripa
+          </label>
+          <label for="comer">
+            <input type="checkbox" name="gustos" id="comer" value="comer" />
+            Tos
+          </label>
+          <label for="comer">
+            <input type="checkbox" name="gustos" id="comer" value="comer" />
+            Dificultad para respirar
+          </label>
+          <label for="comer">
+            <input type="checkbox" name="gustos" id="comer" value="comer" />
+            Ninguno
+          </label>
+        </div>
+        <div>
+          <label for="tex">Comentarios</label><br>
+        <textarea
+          name="texto"
+          id="texto"
+          cols="30"
+          rows="10"
+          placeholder="Aquí puedes agregar los respectivos comentarios a tu situación actual..."
+        ></textarea>
+        </div>
+        <div id="boton">
+            <input type="submit" value="Enviar" />
+            <p>Gracias por la información brindada!</p>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
